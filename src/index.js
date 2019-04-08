@@ -9,8 +9,10 @@ import './index.css';
 const store = createStore(shoppingListItemReducer);
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>, 
-  document.getElementById('root')
+    <Provider store={store}>
+        {' '}
+        /* code change */
+        <App />
+    </Provider> /* code change */,
+    document.getElementById('root')
 );
